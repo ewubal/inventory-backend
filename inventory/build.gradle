@@ -27,6 +27,11 @@ dependencies {
 	//annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile group: 'org.postgresql', name: 'postgresql', version: '42.2.5'
+	implementation('org.springframework.boot:spring-boot-starter-security')
+	compile 'io.jsonwebtoken:jjwt:0.9.1'
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 }
 
 test {
